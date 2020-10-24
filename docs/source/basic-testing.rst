@@ -68,10 +68,13 @@ You can also get an empty random wallet by calling:
 Deploying contracts
 -------------------
 
-Once you compile your contracts using waffle, you can deploy them in your javascript code. It accepts three arguments:
+Once you compile your contracts using waffle, you can deploy them in your javascript code. You need to provide three arguments:
   - wallet to send the deploy transaction
   - contract information (abi and bytecode)
   - contract constructor arguments
+  
+And you can optionally pass a fourth argument:
+  - transaction request options (like gas limit)
 
 Deploy a contract:
 
